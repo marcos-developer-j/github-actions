@@ -1,0 +1,14 @@
+name: 06b Variables de entorno
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+jobs:
+  tirada-dados:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generar numero aleatorio
+        run: echo "NUM_ALEATORIO=$((1+RANDOM%6))" >> "$GITHUB_ENV"
+      - name: Leer el resultado
+        run: |
+          echo "El numero aleatorio es: ${{env.NUM_ALEATORIO}}"

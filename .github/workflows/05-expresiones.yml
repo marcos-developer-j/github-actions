@@ -22,4 +22,4 @@ jobs:
         id: stepsContext
         run: |
           echo "${{toJson(steps)}}"
-          exho "${{join(steps.*.conclusion)}}"
+          echo "${{join(steps.*.conclusion)}}"

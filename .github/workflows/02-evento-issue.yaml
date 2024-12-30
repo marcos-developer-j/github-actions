@@ -1,0 +1,13 @@
+name: 02 - Evento issue
+on:
+  issues:
+    types: opened
+  push:
+    paths-ignore: 
+        readme.md
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola mundo
+        run: echo "¡Hola Mundo!"

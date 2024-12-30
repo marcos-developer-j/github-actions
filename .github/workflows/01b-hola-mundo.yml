@@ -1,0 +1,11 @@
+name: 1b Hola mundo
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  # This workflow contains a single job called "greet"
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hola Marcos Esteban
+        run: echo "Hola  Marcos Esteban"

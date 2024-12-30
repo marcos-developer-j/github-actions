@@ -3,8 +3,8 @@ on:
   issues:
     types: opened
   push:
-    paths-ignore: 
-        readme.md
+    paths-ignore:
+      - readme.md
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest

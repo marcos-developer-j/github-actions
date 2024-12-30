@@ -4,7 +4,7 @@ on:
     types: opened
   push:
     paths-ignore:
-      - readme.md
+      - "*.md"
 jobs:
   hola-mundo:
     runs-on: ubuntu-latest

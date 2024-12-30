@@ -1,7 +1,6 @@
 name: 1a Hola mundo
 on:
   workflow_dispatch:
-  push:
 jobs:
   # This workflow contains a single job called "greet"
   hola-mundo:
